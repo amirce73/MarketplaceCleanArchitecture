@@ -7,7 +7,7 @@ public class UserService : IUserService
         throw new NotImplementedException();
     }
 
-    public bool SinUp()
+    public bool SignUp()
     {
         throw new NotImplementedException();
     }
