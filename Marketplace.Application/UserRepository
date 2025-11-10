@@ -1,0 +1,30 @@
+using Service;
+
+namespace Service.Repositories;
+
+public class UserRepository : IUserRepository
+{
+    private User _user;
+
+    public UserRepository()
+    {
+        _user = new User();
+    }
+
+    public bool AddUserToDataBase(User user)
+    {
+        _user = user; // ذخیره فقط یک کاربر
+        return true;
+    }
+
+    public User GetUser()
+    {
+        return _user;
+    }
+
+    public bool UpdateUser(User user)
+    {
+        _user = user;
+        return true;
+    }
+}
